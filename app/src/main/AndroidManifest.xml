@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".profile.list_anak"></activity>
         <activity android:name=".Posyandu.read_profile" />
         <activity android:name=".profile.data_profile" />
         <activity android:name=".data_pages.daftar_keluarga.IbuFargment" />
@@ -39,8 +38,8 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
