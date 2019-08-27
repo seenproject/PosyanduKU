@@ -9,4 +9,6 @@
     <string name="anak">Anak</string>
     <string name="bapak">Bapak</string>
     <string name="ibu">Ibu</string>
+    <string name="timbang">Timbang</string>
+    <string name="jadwal_posyandu">Jadwal Posyandu</string>
 </resources>
