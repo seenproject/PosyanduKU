@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/anak_menu"
+        android:title="@string/anak"
+        />
+    <item
+        android:id="@+id/bpk_menu"
+        android:title="@string/bapak"
+        />
+    <item
+        android:id="@+id/ibu_menu"
+        android:title="@string/ibu"
+        />
+
+</menu>

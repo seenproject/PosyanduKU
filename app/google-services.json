@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "30877259468",
+    "firebase_url": "https://posyanduapp-58ee3.firebaseio.com",
+    "project_id": "posyanduapp-58ee3",
+    "storage_bucket": "posyanduapp-58ee3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30877259468:android:4f5eca3565fbe95c",
+        "android_client_info": {
+          "package_name": "satella.app.posyanduku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30877259468-57ufulvssfsam1qq1h7h3qv8q2ki91fu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "satella.app.posyanduku",
+            "certificate_hash": "189f7aeb879a364791f1c4b04aa90968b076abde"
+          }
+        },
+        {
+          "client_id": "30877259468-elqk0i8700emghd7vb17fud9j269l6ff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDrQcY5T5H1Clkw2zPVySMjaVKTfmNiNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30877259468-elqk0i8700emghd7vb17fud9j269l6ff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

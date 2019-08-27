@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleSize">20sp</dimen>
+    <dimen name="textSize">15sp</dimen>
+    <dimen name="margin_horizontal">5dp</dimen>
+    <dimen name="margin_vertical">10dp</dimen>
+
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_indicator_height">3dp</dimen>
+    <dimen name="text_tab_size">14sp</dimen>
+</resources>

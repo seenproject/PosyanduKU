@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".data_pages.DataBalitaActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ln1"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="@dimen/margin_horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/margin_horizontal"
+        android:background="@color/backgroundFamilly"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            app:srcCompat="@drawable/icon_child" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_weight="1"
+            android:text="Data anak"
+            android:textColor="@color/teksColorBlack"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/btn_anak"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="end|center"
+            app:srcCompat="@drawable/ic_chevron_right_black_100dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="@dimen/margin_horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/margin_horizontal"
+        android:background="@color/backgroundFamilly"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln1">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            app:srcCompat="@drawable/icon_family" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_weight="1"
+            android:text="Data orang tua"
+            android:textColor="@color/teksColorBlack"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/btn_parent"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center|end"
+            app:srcCompat="@drawable/ic_chevron_right_black_100dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln3"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="@dimen/margin_horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/margin_horizontal"
+        android:background="@color/backgroundFamilly"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln2">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            app:srcCompat="@drawable/icon_list" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_weight="1"
+            android:text="Daftar keluarga"
+            android:textColor="@color/teksColorBlack"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/btn_list"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center|end"
+            app:srcCompat="@drawable/ic_chevron_right_black_100dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:srcCompat="@drawable/gradient" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="@dimen/margin_horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/margin_horizontal"
+        android:background="@color/backgroundFamilly"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln3">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            app:srcCompat="@drawable/icon_health" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_weight="1"
+            android:text="Tips sehat balita"
+            android:textColor="@color/teksColorBlack"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/btn_tips"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_chevron_right_black_100dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
