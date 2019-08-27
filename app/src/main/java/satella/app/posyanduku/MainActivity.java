@@ -12,8 +12,6 @@ import android.widget.ImageView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +22,7 @@ import satella.app.posyanduku.adapter.SliderPagerAdapter;
 import satella.app.posyanduku.data_pages.DataBalitaActivity;
 import satella.app.posyanduku.models.Slider;
 import satella.app.posyanduku.note.NoteActivity;
-import satella.app.posyanduku.posyandu.read_profile;
+import satella.app.posyanduku.Posyandu.read_profile;
 import satella.app.posyanduku.profile.data_profile;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
