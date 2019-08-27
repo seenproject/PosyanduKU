@@ -28,7 +28,7 @@ public class RecyclerviewAnakAdapter {
         recyclerView.setAdapter(mAnakAdapter);
     }
 
-    class AnakItemView extends RecyclerView.ViewHolder{
+    public class AnakItemView extends RecyclerView.ViewHolder{
         private TextView mKK, mNmLengkap, mNmPanggil;
         private TextView mTmpLahir, mTglLahir;
         private TextView mJenisKlamin, mStatus,mTinggi, mBerat;

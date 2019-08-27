@@ -113,4 +113,7 @@ public class Anak {
                 " " + beratBlahir +
                 " " + tinggiBlahir ;
     }
+
+    public void getNoKK(String key) {
+    }
 }
