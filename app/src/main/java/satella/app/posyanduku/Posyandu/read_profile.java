@@ -1,12 +1,10 @@
-package satella.app.posyanduku.posyandu;
+package satella.app.posyanduku.Posyandu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
 import android.util.Log;
-
-import javax.xml.transform.Result;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 import satella.app.posyanduku.R;
