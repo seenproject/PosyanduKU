@@ -14,12 +14,17 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import satella.app.posyanduku.MainActivity;
+import satella.app.posyanduku.Posyandu.read_profile;
 import satella.app.posyanduku.R;
 import satella.app.posyanduku.adapter.RecyclerviewAnakAdapter;
 import satella.app.posyanduku.models.Anak;
+
+import static androidx.core.content.ContextCompat.startActivity;
 
 public class List_RecyclerviewAnakAdapter extends RecyclerView.Adapter<List_RecyclerviewAnakAdapter.ViewHolder> {
     private ArrayList<Anak> listAnak;
@@ -67,7 +72,7 @@ public class List_RecyclerviewAnakAdapter extends RecyclerView.Adapter<List_Recy
         holder.tv_nikAnak.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mContext.startActivity(data_profile.getActIntent((Activity) mContext).putExtra("anak", (Parcelable) listAnak.get(position)));
+                mContext.startActivity(data_profile.getActIntent((Activity) mContext).putExtra("anak", (Serializable) listAnak.get(position)));
             }
         });
     }
@@ -76,7 +81,7 @@ public class List_RecyclerviewAnakAdapter extends RecyclerView.Adapter<List_Recy
     @Override
     public int getItemCount() {
         /**
-         * Mengembalikan jumlah item pada barang
+         * Mengembalikan jumlah item pada anak
          */
         return listAnak.size();
     }
