@@ -12,6 +12,7 @@ import net.glxn.qrgen.android.QRCode;
 import net.glxn.qrgen.core.scheme.VCard;
 
 import satella.app.posyanduku.R;
+import satella.app.posyanduku.models.Anak;
 
 public class data_profile extends AppCompatActivity {
 
@@ -24,13 +25,16 @@ public class data_profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_profile);
         ImageView myImage=(ImageView) findViewById(R.id.imageView);
-        VCard puti=new VCard("Puti")
-                .setName("apriani")
-                .setAddress("Indonesia")
-                .setCompany("studytutorial")
-                .setPhoneNumber("258999")
-                .setWebsite("56565565454545");
-        Bitmap myBitmap= QRCode.from(puti).bitmap();
-        myImage.setImageBitmap(myBitmap);
+
+
+        Anak anaks= (Anak) getIntent().getSerializableExtra("anak");
+        if(anaks!=null){
+            VCard balita=new VCard("balita")
+                    .setName(anaks.getNamaLengkap())
+                    .setAddress(anaks.getTglLahir())
+                    .setWebsite(anaks.getNoKK());
+            Bitmap myBitmap= QRCode.from(balita).bitmap();
+            myImage.setImageBitmap(myBitmap);
+        }
     }
 }
