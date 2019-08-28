@@ -1,7 +1,9 @@
 package satella.app.posyanduku.profile;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,7 +47,7 @@ public class List_RecyclerviewAnakAdapter extends RecyclerView.Adapter<List_Recy
 
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
         /**
          *  Menampilkan data pada view
          */
@@ -62,6 +64,12 @@ public class List_RecyclerviewAnakAdapter extends RecyclerView.Adapter<List_Recy
         holder.tv_nikAnak.setText(nikAnak);
         holder.tv_namaAnak.setText(namaAnak);
         holder.tv_tanggalLahir.setText(tanggalLahir);
+        holder.tv_nikAnak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mContext.startActivity(data_profile.getActIntent((Activity) mContext).putExtra("anak", (Parcelable) listAnak.get(position)));
+            }
+        });
     }
 
 
