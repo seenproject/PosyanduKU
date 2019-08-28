@@ -1,7 +1,6 @@
-package satella.app.posyanduku.note;
+package satella.app.posyanduku.Anak_Package.note;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -18,8 +17,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import java.util.List;
 
 import satella.app.posyanduku.R;
 

@@ -1,4 +1,4 @@
-package satella.app.posyanduku;
+package satella.app.posyanduku.posyandu;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -18,21 +18,24 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import satella.app.posyanduku.Anak_Package.note.NoteActivity;
+import satella.app.posyanduku.MainActivity;
+import satella.app.posyanduku.R;
 import satella.app.posyanduku.adapter.SliderPagerAdapter;
 import satella.app.posyanduku.data_pages.DataBalitaActivity;
 import satella.app.posyanduku.models.Slider;
-import satella.app.posyanduku.Anak_Package.note.NoteActivity;
-import satella.app.posyanduku.Posyandu.read_profile;
+import satella.app.posyanduku.posyandu.data.DataBayiActivity;
+import satella.app.posyanduku.posyandu.profil.ProfilPosyanduActivity;
+import satella.app.posyanduku.posyandu.timbang.TimbangActivity;
 import satella.app.posyanduku.profile.data_profile;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
+public class PosyanduMainActivity extends AppCompatActivity implements View.OnClickListener {
     private ViewPager sliderPager;
     private TabLayout tbLayout;
     private List<Slider> lstSlide;
     private FloatingActionButton fab;
 
-    private ImageView imgData, imgAbout, imgProfil, imgCalender;
+    private ImageView imgData, imgTimbang, imgProfil, imgCalender;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,19 +46,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_posyandu_main);
 
         sliderPager = findViewById(R.id.slider_pager);
         tbLayout = findViewById(R.id.indicator);
         fab = findViewById(R.id.fab);
-        imgAbout = findViewById(R.id.img_about);
+        imgTimbang = findViewById(R.id.img_timbang);
         imgCalender = findViewById(R.id.img_calender);
         imgData = findViewById(R.id.img_data);
         imgProfil = findViewById(R.id.img_profil);
 
-        fab.setOnClickListener(this);
         imgProfil.setOnClickListener(this);
-        imgData.setOnClickListener(this);
+        imgTimbang.setOnClickListener(this);
         imgCalender.setOnClickListener(this);
         imgData.setOnClickListener(this);
 
@@ -69,32 +71,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tbLayout.setupWithViewPager(sliderPager,false);
 
         Timer timer = new Timer();
-        timer.scheduleAtFixedRate(new MainActivity.SliderTimer(),4000,5000);
+        timer.scheduleAtFixedRate(new PosyanduMainActivity.SliderTimer(),4000,5000);
     }
 
     @Override
     public void onClick(View v) {
-        if (v == fab){
-            Intent intent = new Intent(MainActivity.this, NoteActivity.class);
+        if (v == imgData){
+            Intent intent = new Intent(PosyanduMainActivity.this, DataBayiActivity.class);
             startActivity(intent);
         }
-        else if (v == imgData){
-            Intent intent = new Intent(MainActivity.this, DataBalitaActivity.class);
+        else if (v == imgTimbang){
+            Intent intent = new Intent(PosyanduMainActivity.this, TimbangActivity.class);
             startActivity(intent);
         } else if (v == imgProfil) {
-            Intent intent = new Intent(MainActivity.this, data_profile.class);
+            Intent intent = new Intent(PosyanduMainActivity.this, ProfilPosyanduActivity.class);
             startActivity(intent);
         }
         else if (v == imgCalender) {
-            Intent intent = new Intent(MainActivity.this, read_profile.class);
+            Intent intent = new Intent(PosyanduMainActivity.this, TimbangActivity.class);
             startActivity(intent);
         }
     }
 
-    class SliderTimer extends TimerTask{
+    class SliderTimer extends TimerTask {
         @Override
         public void run() {
-            MainActivity.this.runOnUiThread(new Runnable() {
+            PosyanduMainActivity.this.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
                     if (sliderPager.getCurrentItem() < lstSlide.size()-1){

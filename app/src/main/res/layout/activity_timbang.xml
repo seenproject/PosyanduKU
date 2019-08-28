@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".posyandu.timbang.TimbangActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/editKode"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:textSize="15sp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Kode Posyandu"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/editKK"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:textSize="15sp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="No Kartu Keluarga"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/editNik"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:textSize="15sp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="No NIK Anak"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/editTanggal"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:inputType="textPersonName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Tanggal Timbang" />
+
+        <EditText
+            android:id="@+id/editTinggi"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:textSize="15sp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Tinggi Badan"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/editBerat"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:textSize="15sp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Berat Badan"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/editLingkar"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:textSize="15sp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Lingkar Kepala"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:background="@drawable/custom_button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
+    </LinearLayout>
+
+</LinearLayout>

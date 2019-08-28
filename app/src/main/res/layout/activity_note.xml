@@ -10,7 +10,7 @@
     android:layout_marginTop="@dimen/margin_vertical"
     android:layout_marginBottom="@dimen/margin_vertical"
     android:orientation="vertical"
-    tools:context=".note.NoteActivity">
+    tools:context=".Anak_Package.note.NoteActivity">
 
     <ImageView
         android:id="@+id/AddData"
